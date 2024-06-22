@@ -6,6 +6,8 @@ function cekKhodam(event){
   let nama = $('#search').val();
   if (nama == '') {
     alert("NAMA TIDAK BOLEH KOSONG!");
+    document.getElementById('deskripsiKodam').innerHTML = ''
+    document.getElementById('result').innerHTML = ''
   }else {
     container[0].style.filter = "blur(8px)"
     loaders.style.display = "block"
